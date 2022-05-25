@@ -1,0 +1,103 @@
+
+// ! THIS IS SCSS! DON'T FORGET TO WATCH SASS!!! You Ult1!
+
+body {
+    background-color: rgb(20, 18, 18);
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    // background-image: url("assets/nyancat.gif");
+    // background-size: 300px 200px;
+ 
+}
+
+#title {
+    color: rgb(235, 182, 35);
+    width: 100vw;
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: -10vh;
+}
+
+
+#main {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 35vh;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    input {
+        margin-top: 0;
+        background-color: #121111;
+        border-color: rgb(51, 48, 48);
+        color: rgb(165, 143, 143);
+        // outline-color: rgb(193, 134, 134);
+        outline: none;
+
+        padding-left: 1vw;
+
+        width: 50vw;
+        height: 5vh;
+
+        font-size: large;
+
+        &:hover {
+            border-color: rgb(99, 84, 84);
+        }
+
+        &:focus {
+            border-color: rgb(76, 64, 264);
+            color: rgb(165, 143, 193);
+        }
+
+    }
+
+    div {
+        margin-top: -15vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a {
+            margin: 20px;
+        }
+
+
+    }
+
+}
+
+#left, #left-hidden-clickable {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: -2;
+    width: 150
+}
+
+#left-hidden-clickable {
+    z-index: 100;
+    filter: opacity(0%);
+}
+
+#right, #right-hidden-clickable {
+    position: absolute;
+    left: calc(100vw - 150px);
+    top: 0px;
+    z-index: -2;
+    width: 150px;
+    height: 100vh;
+
+}
+
+#right-hidden-clickable {
+    z-index: 100;
+    filter: opacity(0%);
+}
+
+
+* {
+    font-family: 'JetBrains Mono', monospace;
+}
